@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Note Keeper</string>
+    <string name="action_settings">Settings</string>
+    <string name="notes_categories">Notes Categories</string>
+    <string name="creative_ideas">Creative Ideas</string>
+    <string name="business_notes">Business Notes</string>
+    <string name="shopping_lists">Shopping Lists</string>
+    <string name="personal_notes">Personal Notes</string>
+    <string name="note_message">Note Message</string>
+</resources>

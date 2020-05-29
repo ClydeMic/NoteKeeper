@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/text_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notes_categories"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/ideas"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:src="@drawable/idea_bulb"
+        app:layout_constraintTop_toBottomOf="@id/text_intro"
+        android:contentDescription="@string/creative_ideas"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="ideasMessage"
+        />
+
+    <TextView
+        android:id="@+id/text_ideas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creative_ideas"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_intro"
+        app:layout_constraintBottom_toBottomOf="@id/ideas"
+        app:layout_constraintLeft_toRightOf="@id/ideas"
+        />
+
+    <ImageView
+        android:id="@+id/personal"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:src="@drawable/personal"
+        app:layout_constraintTop_toBottomOf="@id/ideas"
+        android:contentDescription="@string/personal_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="personalMessage"
+        />
+
+    <TextView
+        android:id="@+id/text_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_notes"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_ideas"
+        app:layout_constraintBottom_toBottomOf="@id/personal"
+        app:layout_constraintLeft_toRightOf="@id/personal"
+        />
+
+    <ImageView
+        android:id="@+id/shop"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shopping"
+        app:layout_constraintTop_toBottomOf="@id/personal"
+        android:contentDescription="@string/shopping_lists"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="shoppingMessage"
+        />
+
+    <TextView
+        android:id="@+id/text_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shopping_lists"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_personal"
+        app:layout_constraintBottom_toBottomOf="@id/shop"
+        app:layout_constraintLeft_toRightOf="@id/shop"
+        />
+
+    <ImageView
+        android:id="@+id/work"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:src="@drawable/briefcase"
+        app:layout_constraintTop_toBottomOf="@id/shop"
+        android:contentDescription="@string/business_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="workMessage"
+        />
+
+    <TextView
+        android:id="@+id/text_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/business_notes"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_shopping"
+        app:layout_constraintBottom_toBottomOf="@id/work"
+        app:layout_constraintLeft_toRightOf="@id/work"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
